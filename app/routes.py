@@ -40,3 +40,7 @@ def transition():
 def inventory():
     data = get_inventory()
     return render_template('inventory.html', data=data)
+
+@main.route("/cronjob")
+def test():
+  return "Successful"
